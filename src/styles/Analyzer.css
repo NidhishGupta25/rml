@@ -1,0 +1,167 @@
+.analyzer-container {
+  width: 212.5vh;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e9f1f7, #f7f9fb);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Input Section */
+.input-section {
+  margin-bottom: 30px;
+  position: relative;
+}
+.input-section input {
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+.input-section input:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.25);
+  outline: none;
+}
+
+.location-button {
+  margin-top: 12px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.location-button:hover {
+  background: #0c59d1;
+  transform: translateY(-2px);
+}
+
+/* Suggestions Dropdown */
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0 0;
+  border: 1px solid #ddd;
+  background: #fff;
+  max-height: 220px;
+  overflow-y: auto;
+  position: absolute;
+  width: 300px;
+  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+.suggestion-item,
+.suggestions-list li {
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.suggestion-item:hover,
+.suggestions-list li:hover {
+  background: #f5f5f5;
+}
+
+/* Map Card */
+.map-card {
+  width: 92%;
+  max-width: 850px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+/* Results Card */
+.results-card {
+  width: 90%;
+  max-width: 550px;
+  padding: 25px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Charts */
+.bottom-charts {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1250px;
+}
+
+.chart-card {
+  flex: 1;
+  min-width: 380px;
+  max-width: 540px;
+  padding: 25px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+.chart-card:hover {
+  transform: translateY(-4px);
+}
+.chart-card h2 {
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #1a73e8;
+}
+
+/* CO2 Savings Card */
+.co2-card {
+  background: linear-gradient(135deg, #e6f4ea, #ffffff);
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-top: 25px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.co2-card:hover {
+  transform: translateY(-3px);
+}
+
+.co2-card h3 {
+  color: #1a73e8;
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.co2-card p {
+  font-size: 16px;
+  color: #333;
+  margin: 8px 0;
+  line-height: 1.6;
+}
